@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBgColor"
+    tools:context=".Home">
+
+
+    <TextView
+        android:id="@+id/welcometext"
+        android:layout_width="311dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="103dp"
+        android:background="@drawable/ic_rectangle_2216"
+        android:padding="17dp"
+        android:textSize="18sp"
+        android:text="There is no language richer than Kazakh. The Kazakh language, which was the language of that ancestor, is known not only to today's Kazakhs."
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <ImageView
+        android:id="@+id/lessons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcometext"
+        app:srcCompat="@drawable/ic_rectangle_2217" />
+
+    <ImageView
+        android:id="@+id/img_lesson"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/lessons"
+        app:layout_constraintTop_toTopOf="@+id/lessons"
+        app:srcCompat="@drawable/ic_lessons" />
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/movies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lessons"
+        app:layout_constraintTop_toBottomOf="@+id/welcometext"
+        app:srcCompat="@drawable/ic_rectangle_2217" />
+    <ImageView
+        android:id="@+id/img_movies"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/movies"
+        app:layout_constraintTop_toTopOf="@+id/movies"
+        app:srcCompat="@drawable/ic_movies"
+        />
+
+    <ImageView
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lessons"
+        app:srcCompat="@drawable/ic_rectangle_2217" />
+    <ImageView
+        android:id="@+id/img_music"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/music"
+        app:layout_constraintTop_toTopOf="@+id/music"
+        app:srcCompat="@drawable/ic_music"
+        />
+
+    <ImageView
+        android:id="@+id/liter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/music"
+        app:layout_constraintTop_toBottomOf="@+id/movies"
+        app:srcCompat="@drawable/ic_rectangle_2217" />
+    <ImageView
+        android:id="@+id/img_liter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/liter"
+        app:layout_constraintTop_toTopOf="@+id/liter"
+        app:srcCompat="@drawable/ic_baseline_book_24"
+        />
+
+    <TextView
+        android:id="@+id/tw_homepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/days_one"
+        android:text="Home page"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tw_lessons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="51dp"
+        android:fontFamily="@font/days_one"
+        android:text="Lessons"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/lessons"
+        app:layout_constraintStart_toStartOf="@+id/lessons" />
+
+    <TextView
+        android:id="@+id/tw_movies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="51dp"
+        android:fontFamily="@font/days_one"
+        android:text="VIdeos"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/movies"
+        app:layout_constraintStart_toStartOf="@+id/movies" />
+
+    <TextView
+        android:id="@+id/tw_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="51dp"
+        android:fontFamily="@font/days_one"
+        android:text="Music"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/music"
+        app:layout_constraintStart_toStartOf="@+id/music" />
+
+    <TextView
+        android:id="@+id/tw_liter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="51dp"
+        android:fontFamily="@font/days_one"
+        android:text="Literacy"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/liter"
+        app:layout_constraintStart_toStartOf="@+id/liter" />
+
+    <TextView
+        android:id="@+id/tw_urcourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/days_one"
+        android:text="Your courses"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcometext" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-120dp">
+
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/tabbar"
+        android:background="#1070E0"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
